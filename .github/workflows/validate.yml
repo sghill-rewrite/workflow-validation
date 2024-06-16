@@ -11,6 +11,7 @@ jobs:
         uses: actions/setup-java@v4
         with:
           java-version: "17"
+          distribution: temurin
           cache: maven
       - name: mvn clean verify
         run: mvn --batch-mode clean verify
